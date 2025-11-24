@@ -1,0 +1,147 @@
+/* ===== СТИЛИ ДЛЯ СТРАНИЦЫ ЛОГИНА ===== */
+
+/* Контейнер страницы логина */
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(152, 251, 152, 0.9), rgba(255, 182, 193, 0.9));
+    padding: 20px;
+}
+
+/* Форма логина */
+.login-form {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Группы формы */
+.login-form .form-group {
+    margin-bottom: 20px;
+}
+
+.login-form .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.login-form .form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.login-form .form-group input:focus {
+    outline: none;
+    border-color: #98FB98;
+    box-shadow: 0 0 0 3px rgba(152, 251, 152, 0.1);
+}
+
+/* Сообщение об ошибке */
+.error-message {
+    background: #ffebee;
+    color: #c62828;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-left: 4px solid #c62828;
+}
+
+/* Кнопка входа */
+.login-form .btn-primary {
+    background: linear-gradient(135deg, #98FB98, #87CEFA);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.login-form .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Кнопка возврата на главную */
+.login-form .btn-secondary {
+    background: #f8f9fa;
+    color: #333;
+    padding: 12px 30px;
+    border: 2px solid #e0e0e0;
+    border-radius: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.login-form .btn-secondary:hover {
+    background: #e9ecef;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* ===== АДАПТИВНОСТЬ ===== */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 15px;
+    }
+    
+    .login-form {
+        padding: 30px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-form {
+        padding: 25px 20px;
+        margin: 10px;
+    }
+    
+    .login-form h2 {
+        font-size: 1.5rem;
+        margin-bottom: 25px;
+    }
+    
+    .login-form .form-group input {
+        padding: 10px;
+    }
+    
+    .login-form .btn-primary,
+    .login-form .btn-secondary {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+    }
+}
